@@ -101,3 +101,11 @@ let g:NERDTreeMouseMode=3
 
 " Additional
 nnoremap <F5> :GundoToggle<CR>
+
+" ==========================================================
+" Key Remap for Split Navigation
+" ==========================================================
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
