@@ -20,6 +20,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'vim-airline/vim-airline'
 "
 " " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 "
@@ -79,10 +80,12 @@ set textwidth=120            " Lines are automatically wrapped after 120 columns
 set linespace=3             " The spacing between lines is a little roomier
 
 """ Searching and Patterns
-"set ignorecase              " Default to using case insensitive searches,
 set smartcase               " unless uppercase letters are used in the regex.
 set hlsearch                " Highlight searches by default.
 set incsearch               " Incrementally search while typing a /regex
+
+" airline status is always on
+set laststatus=2
 
 " Make diffs *really* obvious
 hi DiffText gui=underline guibg=red guifg=black
